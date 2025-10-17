@@ -5,7 +5,7 @@
 
 A clean, modern, and fully responsive personal portfolio website built from scratch using React and Vite.
 
-![Portfolio Screenshot]
+Portfolio Screenshot-
 <img width="1916" height="1090" alt="Screenshot 2025-10-17 224210" src="https://github.com/user-attachments/assets/006faba1-78f1-4b9c-bde3-2e5c5195ed06" />
 
 
