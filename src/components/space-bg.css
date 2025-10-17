@@ -1,0 +1,45 @@
+.space-bg {
+  position: fixed;
+  z-index: 1;
+  width: 100vw;
+  height: 100vh;
+  background: radial-gradient(circle at 60% 40%, #2d1e60 30%, #0a0b18 100%);
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.space-bg::before,
+.space-bg::after {
+  content: "";
+  display: block;
+  position: absolute;
+  pointer-events: none;
+}
+
+.space-bg::before {
+  width: 300vw;
+  height: 300vh;
+  left: -100vw;
+  top: -100vh;
+  background: repeating-radial-gradient(circle at 50% 30%, #5cc7f6 2px, transparent 5px);
+  opacity: 0.2;
+  animation: moveStars 180s linear infinite;
+}
+
+@keyframes moveStars {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-10vh);
+  }
+}
+
+.space-bg::after {
+  width: 100vw;
+  height: 3px;
+  top: 60vh;
+  left: 0;
+  background: linear-gradient(90deg, #fff0 0%, #19FB9B44 50%, #fff0 100%);
+  opacity: 0.3;
+}

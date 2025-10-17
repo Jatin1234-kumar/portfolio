@@ -1,0 +1,154 @@
+body {
+  margin: 0;
+  font-family: 'Orbitron', sans-serif;
+  background: linear-gradient(135deg, #191970 0%, #0a0a23 100%);
+  color: #e0eaff;
+  min-height: 100vh;
+}
+
+.App main {
+  padding: 2rem;
+  position: relative;
+  z-index: 2;
+}
+
+h1, h2, h3 {
+  font-family: 'Orbitron', sans-serif;
+  letter-spacing: 2px;
+}
+
+a {
+  color: #19FB9B;
+  transition: color 0.2s;
+  text-decoration: none;
+}
+
+.section {
+  margin-bottom: 4rem;
+}
+
+.neon {
+  color: #19FB9B;
+  text-shadow: 0 0 12px #19FB9B88, 0 0 22px #19FB9B44;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+}
+
+.project-card {
+  background: #22223bcc;
+  border-radius: 1rem;
+  box-shadow: 0 2px 16px #0a0a2390;
+  padding: 2rem;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.project-card:hover {
+  transform: translateY(-4px) scale(1.03);
+  box-shadow: 0 6px 32px #19fb9b55;
+}
+
+.projects-section {
+  margin-bottom: 6rem;
+}
+
+.stack-tag {
+  background: #19197099;
+  color: #19FB9B;
+  border-radius: 12px;
+  padding: 0.2em 0.9em;
+  margin-right: 0.4em;
+  font-size: 0.9em;
+  display: inline-block;
+}
+
+.skills-list {
+  max-width: 600px;
+}
+
+.skill-bar-container {
+  margin-bottom: 1.6rem;
+}
+
+.skill-name {
+  font-weight: bold;
+  display: block;
+  letter-spacing: 1px;
+}
+
+.skill-bar-bg {
+  background: #252558;
+  border-radius: 100px;
+  height: 16px;
+  margin: 0.4em 0;
+  width: 90%;
+  display: inline-block;
+}
+
+.skill-bar-fill {
+  height: 16px;
+  border-radius: 100px;
+  background: linear-gradient(90deg, #1EB0AD, #19FB9B 70%);
+  box-shadow: 0 0 18px #19fb9b55;
+  transition: width 1s cubic-bezier(0.39, 0.575, 0.565, 1);
+}
+
+.skill-level {
+  float: right;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  margin-bottom: 1em;
+  padding: 0.8em;
+  border-radius: 8px;
+  border: 1px solid #23235b;
+  background: rgba(255, 255, 255, 0.1);
+  color: #e0eaff;
+}
+
+.contact-form button {
+  background: #19FB9B;
+  color: #191970;
+  border: none;
+  border-radius: 8px;
+  padding: 0.8em;
+  cursor: pointer;
+  font-weight: bold;
+  transition: filter 0.2s;
+}
+
+.contact-form button:hover {
+  filter: brightness(1.2);
+}
+
+.success-message {
+  color: #19FB9B;
+  font-weight: 600;
+  font-size: 1.2em;
+}
+
+.contact-socials {
+  margin-top: 2rem;
+}
+
+.contact-socials a {
+  display: block;
+  margin-bottom: 1em;
+  color: #19FB9B;
+  font-size: 1.2em;
+}
+
+.project-card a {
+  margin-top: 1.5rem;
+  display: inline-block;
+}

@@ -1,0 +1,53 @@
+/* reset box-sizing and remove default body margin to avoid horizontal scroll */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.navbar {
+    position: fixed; /* make navbar fixed */
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1000; /* make sure it stays on top */
+    background: rgba(16, 17, 50, 0.95);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.6em 1.5em;
+    box-shadow: 0 1px 7px #19fb9b33;
+}
+
+.navbar-logo {
+    font-weight: bold;
+    color: #19fb9b;
+    font-size: 1.7em;
+    letter-spacing: 2px;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 1.4em;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar li a {
+    color: #e0eaff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+.navbar li a:hover {
+    color: #19fb9b;
+}
